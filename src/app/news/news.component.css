@@ -7,7 +7,7 @@
   }
 
   .bg{
-  background: url(src/img/445161.jpg);
+  background: url(/assets/445161.jpg);
   background-position: center;
   /* height: 100%; */
   height: 100vh;
