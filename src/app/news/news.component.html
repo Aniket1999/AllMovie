@@ -37,7 +37,7 @@
   aria-hidden="true">
   <div class="modal-fluid .modal-dialog-scrollable modal-dialog" role="document">
     <div class="modal-content" style="background-color:transparent">      
-      <section id="banner" class="clearfix" *ngIf="media; else persons" style='background:url("https://cdn.hipwallpaper.com/i/58/18/w3k0bz.jpg");background-repeat: round;'>
+      <section id="banner" class="clearfix" *ngIf="media; else persons" style='background:url("/assets/w3k0bz.jpg");background-repeat: round;'>
         <div id="banner_content_wrapper">
           <div id="poster">
             <img src="{{modals.poster_path}}" class="featured_image">
@@ -51,7 +51,7 @@
         </div>
       </section>
         <ng-template #persons>
-        <section id="banner" class="clearfix" style='background:url("https://cdn.hipwallpaper.com/i/58/18/w3k0bz.jpg");background-repeat: round;'>
+        <section id="banner" class="clearfix" style='background:url("/assets/w3k0bz.jpg");background-repeat: round;'>
             <div id="banner_content_wrapper">
               <div id="poster">
                 <img src="{{modals.poster_path}}" class="featured_image">

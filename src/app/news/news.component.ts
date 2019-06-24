@@ -34,7 +34,7 @@ export class NewsComponent implements OnInit {
       this.articles.forEach(function (element){
         // console.log(element.poster_path);
         if(element.poster_path == null && element.profile_path==null){
-          element.poster_path = "https://www.rspcansw.org.au/wp-content/themes/noPhotoFound.png"; 
+          element.poster_path = "/assets/noPhotoFound.png"; 
           element.profile_path = "";
         } else if(element.profile_path == null) {
           element.poster_path = "https://image.tmdb.org/t/p/w600_and_h900_bestv2/"+element.poster_path;
@@ -54,7 +54,7 @@ export class NewsComponent implements OnInit {
       this.tvService.getData(datamodal).subscribe((data)=>{
         this.modals = data;
         if(this.modals.poster_path == null){
-          this.modals.poster_path = "https://www.iol.co.za/assets/images/general/no-image.png"; 
+          this.modals.poster_path = "/assets/no-image.png"; 
         } else {
           this.modals.poster_path = "https://image.tmdb.org/t/p/w600_and_h900_bestv2/"+this.modals.poster_path;
         }
@@ -67,7 +67,7 @@ export class NewsComponent implements OnInit {
       this.dataService.getData(datamodal).subscribe((data)=>{
       this.modals = data;
       if(this.modals.poster_path == null){
-        this.modals.poster_path = "https://www.iol.co.za/assets/images/general/no-image.png"; 
+        this.modals.poster_path = "/assets/no-image.png"; 
       } else {
         this.modals.poster_path = "https://image.tmdb.org/t/p/w600_and_h900_bestv2/"+this.modals.poster_path;
       }
@@ -80,7 +80,7 @@ export class NewsComponent implements OnInit {
       this.modals = data;
       // console.log(this.modals);
       if(this.modals.profile_path == null){
-        this.modals.poster_path = "https://www.iol.co.za/assets/images/general/no-image.png"; 
+        this.modals.poster_path = "/assets/no-image.png"; 
       } else {
         this.modals.poster_path = "https://image.tmdb.org/t/p/w600_and_h900_bestv2/"+this.modals.profile_path;
       }
